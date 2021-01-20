@@ -250,6 +250,7 @@ export declare type Params = {
     [key: string]: any;
 };
 
+/** @deprecated */
 export declare class PreloadAllModules implements PreloadingStrategy {
     preload(route: Route, fn: () => Observable<any>): Observable<any>;
 }

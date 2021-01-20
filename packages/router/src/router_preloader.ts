@@ -37,6 +37,8 @@ export abstract class PreloadingStrategy {
  * ```
  *
  * @publicApi
+ * @deprecated from v12 - not recommended in large applications because it's very CPU and network
+ *     remanding.
  */
 export class PreloadAllModules implements PreloadingStrategy {
   preload(route: Route, fn: () => Observable<any>): Observable<any> {
