@@ -41,6 +41,10 @@ If the feature request receives 20 or more votes, we verify if we can afford to 
 whether it aligns with the long-term vision of Angular. If the answers of both questions are yes,
 we prioritize the request, alternatively we close it.
 
+## Diagram
+
+![Feature Request Automation](https://github.com/angular/angular/raw/master/docs/images/feature-request-automation.png)
+
 ## What if I want to implement the feature to help the Angular team?
 
 Often implementing the feature as an separate package is a better option. Building an external
