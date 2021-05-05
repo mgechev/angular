@@ -1,0 +1,13 @@
+name: Feature request triage bot
+
+on: [workflow_dispatch]
+
+jobs:
+  feature_triage:
+    if: github.repository == 'angular/angular'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: angular/dev-infra/github-actions/feature-request@c6f942321643811f88f785e39b7039149955d4e4
+        with:
+          token: ${{ secrets.FEATURE_REQUEST_BOT_TOKEN }}
+          limit: 30
