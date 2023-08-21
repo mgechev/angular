@@ -5,8 +5,11 @@ import { Observable, of } from 'rxjs';
 import { catchError, startWith } from 'rxjs/operators';
 
 import { TwainService } from './twain.service';
+import { AsyncPipe } from '@angular/common';
+import { sharedImports } from '../shared/shared';
 
 @Component({
+  standalone: true,
   selector: 'twain-quote',
   // #docregion template
   template: `
@@ -16,8 +19,8 @@ import { TwainService } from './twain.service';
   // #enddocregion template
   styles: [
     '.twain { font-style: italic; } .error { color: red; }'
-  ]
-
+  ],
+  imports: [AsyncPipe, sharedImports]
 })
 export class TwainComponent implements OnInit {
   errorMessage!: string;

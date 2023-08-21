@@ -1,7 +1,7 @@
 // #docregion
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({name: 'titlecase', pure: true})
+@Pipe({name: 'titlecase', pure: true, standalone: true})
 /** Transform to Title Case: uppercase the first letter of the words in a string. */
 export class TitleCasePipe implements PipeTransform {
   transform(input: string): string {
